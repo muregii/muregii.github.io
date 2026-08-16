@@ -1,64 +1,38 @@
-# ray.github.io
-My personal project portfolio 
+# raydonmuregi.net
 
-Based on the contents of the "muregii.github.io" project, which includes HTML, CSS, JavaScript, and other assets, I'll create a `README.md` file that provides an overview of the project, its structure, and instructions for getting started.
+Personal website for **Raydon Muregi** — software engineer, product manager, and founder.
+Computer Science at Duke University.
 
----
+Live at **https://muregii.github.io**
 
-# Muregii's Portfolio
+## Structure
 
-Welcome to the source code repository for my personal portfolio website, a showcase of my skills, projects, and experiences in the world of web development and programming.
+Single self-contained page — `index.html` holds the markup, styles and scripts,
+with everything else under `assets/`.
 
-## Project Overview
+```
+index.html          markup + inline CSS/JS
+favicon.svg
+assets/
+  hero.jpg          hero portrait (WebGL fluid-reveal canvas)
+  about.jpg
+  contact.jpg
+  projects/         full-bleed layers for the Selected Work scroll
+  ventures/         founder-project imagery
+  speaking/         talks & conferences
+```
 
-This portfolio website is designed to be a professional and visually appealing representation of my work. It is built with a combination of modern web technologies and includes the following directories and files:
+External runtime dependencies are loaded from CDNs: GSAP (+ ScrollTrigger, Flip),
+Splitting, threejs-components, and Google Fonts.
 
-- `index.html`: The entry point of the website.
-- `css/`: Contains the CSS files for styling the website.
-- `js/`: JavaScript files that add interactivity and functionality.
-- `img/`: A collection of images used throughout the website.
-- `sass/`: SASS files for advanced styling.
-- `databases/`: Contains data files used in the website.
-- `vendor/`: External libraries and frameworks used in the project.
+## Local preview
 
-## Getting Started
+```bash
+python3 -m http.server 8899
+# http://localhost:8899
+```
 
-To get a local copy of the website running, follow these steps:
+## History
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/muregii.github.io.git
-   ```
-
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd muregii.github.io
-   ```
-
-3. **Open the `index.html` File**:
-   - Launch the `index.html` file in a web browser to view the website.
-
-## Contributing
-
-I welcome contributions to this project! Whether it's bug fixes, feature additions, or improvements to the documentation, your help is appreciated.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
-3. Commit your Changes (`git commit -m 'Add some YourFeature'`)
-4. Push to the Branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-## Contact
-
-Feel free to reach out for any questions or if you just want to connect!
-
-- Email: [raydonmuregi@gmail.com)
-- LinkedIn: [https://www.linkedin.com/in/raydon-muregi-56a738213]
-
----
-
-This `README.md` provides a comprehensive overview of the portfolio project, instructions for setting it up locally, and information for potential contributors. You can modify it according to the specific details of your project or personal information.
+The previous (2024) version of this site is preserved on the
+[`old-site-2024`](https://github.com/muregii/muregii.github.io/tree/old-site-2024) branch.
